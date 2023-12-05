@@ -1,49 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-	@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900,900i');
-    
-	body {
-    	font-family: "Montserrat", sans-serif;
-    	display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        font-size: 32px;
-        font-weight: 500;
-        height: 100vh;
-        
-    }
-    
-    input {
-    	font-family: "Montserrat", sans-serif;
-    	font-size: 24px;
-        font-weight: 300;
-        text-align: center;
-    }
-    
-    form button {
-    	font-size: 24px;
-        background-color: #FF3402;
-        color: #fff;
-        border: 0px;
-        padding: 10px;
-        border-bottom: 5px solid #727272;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaundroSwitch</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900,900i');
+
+        body {
+            font-family: "Montserrat", sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            font-size: 32px;
+            font-weight: 500;
+            height: 100vh;
+        }
+
+        input {
+            font-family: "Montserrat", sans-serif;
+            font-size: 24px;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        form button {
+            font-size: 24px;
+            background-color: #FF3402;
+            color: #fff;
+            border: 0px;
+            padding: 10px;
+            border-bottom: 5px solid #727272;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-<div style="font-weight: 700; font-size: 33px;">LaundroSwitch</div>
-<div style="font-weight: 700; font-size: 43.2px;">WELCOME</div>
-<form style="display: flex; flex-direction: column;">
-<div style="font-weight: 700; font-size: 24px;">Sign in to continue</div>
-<br>
-<input type="text" placeholder="Username"></input>
-<input type="pwd" placeholder="Password"></input>
-<br>
-<button>SIGN IN</button>
-<p style="font-size: 20px; text-align: center;">Forgot Password?</p>
-</form>
+    <div style="font-weight: 700; font-size: 33px;">LaundroSwitch</div>
+    <div style="font-weight: 700; font-size: 43.2px;">WELCOME</div>
+    <form style="display: flex; flex-direction: column;">
+        <div style="font-weight: 700; font-size: 24px;">Sign in to continue</div>
+        <br>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <br>
+        <button onclick="redirectToHomepage()">SIGN IN</button>
+        <p style="font-size: 20px; text-align: center;">Forgot Password?</p>
+    </form>
+
+    <script>
+        function redirectToHomepage() {
+            window.location.href = "/homepage";
+        }
+    </script>
 </body>
 </html>

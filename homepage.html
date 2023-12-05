@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900,900i');
+
+        body {
+            font-family: "Montserrat", sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            font-size: 32px;
+            font-weight: 500;
+            height: 100vh;
+        }
+
+        .allLaundry {
+            width: 100%;
+        }
+
+        .laundryBoxes {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .laundryBox {
+            border: 2px solid #000;
+            height: 100px;
+            width: 100px;
+            cursor: pointer; /* Add cursor style to indicate it's clickable */
+        }
+
+        .laundryBox img {
+            height: 100%;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="header" style="font-weight: 700">Select a Machine</div>
+    <div class="allLaundry">
+        <div class="laundryBoxes">
+            <div class="laundryBox"><img src="https://cdn3.iconfinder.com/data/icons/cleaning-service-blue-filled-color/300/42712703Untitled-3-512.png"></div>
+            <div class="laundryBox"><img src="https://cdn3.iconfinder.com/data/icons/cleaning-service-blue-filled-color/300/42712703Untitled-3-512.png"></div>
+            <div class="laundryBox"><img src="https://cdn3.iconfinder.com/data/icons/cleaning-service-blue-filled-color/300/42712703Untitled-3-512.png"></div>
+            <div class="laundryBox"><img src="https://cdn3.iconfinder.com/data/icons/cleaning-service-blue-filled-color/300/42712703Untitled-3-512.png"></div>
+        </div>
+        <br>
+        <div class="laundryBoxes">
+            <div class="laundryBox"><img src="https://cdn3.iconfinder.com/data/icons/cleaning-service-blue-filled-color/300/42712703Untitled-3-512.png"></div>
+            <div class="laundryBox"><img src="https://cdn3.iconfinder.com/data/icons/cleaning-service-blue-filled-color/300/42712703Untitled-3-512.png"></div>
+            <div class="laundryBox"><img src="https://cdn3.iconfinder.com/data/icons/cleaning-service-blue-filled-color/300/42712703Untitled-3-512.png"></div>
+            <div class="laundryBox"><img src="https://cdn3.iconfinder.com/data/icons/cleaning-service-blue-filled-color/300/42712703Untitled-3-512.png"></div>
+        </div>
+        <br>
+        <div class="laundryBoxes">
+            <div class="laundryBox"><img src="https://cdn3.iconfinder.com/data/icons/cleaning-service-blue-filled-color/300/42712703Untitled-3-512.png"></div>
+            <div class="laundryBox"><img src="https://cdn3.iconfinder.com/data/icons/cleaning-service-blue-filled-color/300/42712703Untitled-3-512.png"></div>
+            <div class="laundryBox"><img src="https://cdn3.iconfinder.com/data/icons/cleaning-service-blue-filled-color/300/42712703Untitled-3-512.png"></div>
+            <div class="laundryBox"><img src="https://cdn3.iconfinder.com/data/icons/cleaning-service-blue-filled-color/300/42712703Untitled-3-512.png"></div>
+        </div>
+    </div>
+
+    
+
+    <script>
+        // jQuery script to redirect to /machinepage when .laundryBox is clicked
+        $(document).ready(function() {
+            $(".laundryBox").click(function() {
+                window.location.href = "/machinepage";
+            });
+        });
+    </script>
+</body>
+</html>

@@ -25,14 +25,16 @@
             text-align: center;
         }
 
-        form button {
+        form a {
             font-size: 24px;
             background-color: #FF3402;
             color: #fff;
             border: 0px;
             padding: 10px;
             border-bottom: 5px solid #727272;
+            text-align: center;
             cursor: pointer;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -45,14 +47,8 @@
         <input type="text" placeholder="Username">
         <input type="password" placeholder="Password">
         <br>
-        <button onclick="redirectToHomepage()">SIGN IN</button>
+        <a href="https://skookuri.github.io/laundroapp/homepage">SIGN IN</a>
         <p style="font-size: 20px; text-align: center;">Forgot Password?</p>
     </form>
-
-    <script>
-        function redirectToHomepage() {
-            window.location.href = "/homepage";
-        }
-    </script>
 </body>
 </html>
